@@ -1,0 +1,54 @@
+.dashboard-box {
+    background-color: #d3e3e9;
+    max-width: 800px;
+    max-height: fit-content;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #a04343;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #740c0c;
+  }
+  
+  form {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 300px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: rgb(5, 5, 5);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #006F8C;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

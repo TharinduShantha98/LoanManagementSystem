@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/dashbord.css')}}">
+    <title>Dashbord</title>
+</head>
+<body>
+    <div class="dashboard-box">
+		<h1>Dashboard</h1>
+		<p>Current Loan Amount: ${{ current_loan_amount }}</p>
+		<form method="post">
+			<label for="loan_amount">Loan Amount:</label>
+			<input type="number" id="loan_amount" name="loan_amount"><br><br>
+			<input type="submit" value="Request Loan">
+		</form>
+		<br>
+		<h2>Pending Loan Requests:</h2>
+		<ul>
+			{% for loan_request in pending_loan_requests %}
+			<li>${{ loan_request['amount'] }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</body>
+</html>
